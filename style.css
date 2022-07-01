@@ -1,12 +1,10 @@
 body {
     display: flex;
     justify-content: center;
-
 }
 
 .app {
     display: flex;
-
 }
 
 .star{
@@ -19,9 +17,9 @@ body {
 
 .connect{
     border-radius: 40px;
-    background-color: orange;
+    background-color: grey;
 }
 
 .grey{
-    background-color: grey;
+    background-color: orange;
 }

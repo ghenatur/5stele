@@ -11,25 +11,19 @@ starArr.forEach((star, index) => {
             }
         })
         const connect = document.querySelectorAll('.connect')
-
         connect.forEach((el, ind) => {
-            // console.log()
-            // console.log()
             el.addEventListener('mouseenter', (ev) => {
                 connect.forEach((item, nr) => {
-                    console.log(item, "item", el, "el")
-                    console.log(nr, 'nr', ind, 'ind',index,'index')
-
-
-                    if (nr > ind) {
+                    if (nr <= ind) {
                         item.classList.add('grey')
-                    } else if (nr <= ind) {
+                    } else if (nr >= ind) {
                         item.classList.remove('grey')
                     }
-
+                    item.addEventListener('mouseout', () => {
+                        el.classList.remove('grey')
+                    })
                 })
             })
-
         })
     })
 })
