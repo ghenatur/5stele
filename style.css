@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.app {
+    display: flex;
+
+}
+
+.star{
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+.connect{
+    border-radius: 40px;
+    background-color: orange;
+}
+
+.grey{
+    background-color: grey;
+}
